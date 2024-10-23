@@ -56,9 +56,11 @@ export default class VoitureList extends Component {
                             <th>Marque</th>
                             <th>Modèle</th>
                             <th>Couleur</th>
+                            <th>immatricule</th>
                             <th>Année</th>
                             <th>Prix</th>
-                            <th>Actions</th> {/* Ajouter une colonne pour les actions */}
+                            <th>Actions</th>
+                            {/* Ajouter une colonne pour les actions */}
                         </tr>
                         </thead>
                         <tbody>
@@ -68,15 +70,17 @@ export default class VoitureList extends Component {
                                     <td>{voiture.marque}</td>
                                     <td>{voiture.modele}</td>
                                     <td>{voiture.couleur}</td>
+                                    <td>{voiture.immatricule}</td>
                                     <td>{voiture.annee}</td>
                                     <td>{voiture.prix}</td>
                                     <td>
                                         <ButtonGroup>
                                             <Link to={`edit/${voiture.id}`} className="btn btn-sm btn-outline-primary">
-                                                <FontAwesomeIcon icon={faEdit} />
+                                                <FontAwesomeIcon icon={faEdit}/>
                                             </Link>{' '}
-                                            <Button size="sm" variant="outline-danger" onClick={this.deleteVoiture.bind(this, voiture.id)}>
-                                                <FontAwesomeIcon icon={faTrash} />
+                                            <Button size="sm" variant="outline-danger"
+                                                    onClick={this.deleteVoiture.bind(this, voiture.id)}>
+                                                <FontAwesomeIcon icon={faTrash}/>
                                             </Button>
                                         </ButtonGroup>
                                     </td>
