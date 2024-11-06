@@ -3,7 +3,7 @@
 
 ## Description
 
-Ce dépôt contient une application web full-stack pour la gestion de compagnies, construite avec un backend en Spring Boot, un frontend en ReactJS, et une base de données PostgreSQL. Le projet inclut également Prometheus et Grafana pour le monitoring.
+Ce dépôt contient une application web full-stack pour la gestion de voitures, construite avec un backend en Spring Boot, un frontend en ReactJS, et une base de données PostgreSQL. Le projet inclut également Prometheus et Grafana pour le monitoring.
 
 ## Prérequis
 
